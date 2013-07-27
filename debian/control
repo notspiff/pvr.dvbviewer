@@ -5,7 +5,6 @@ Build-Depends: debhelper (>= 8.0.0), cmake, xbmc-pvr-dev,
                libxbmcplatform-dev, xbmc-addon-dev
 Standards-Version: 3.9.2
 Section: libs
-Homepage: <insert the upstream URL, if relevant>
 
 Package: xbmc-pvr-dvbviewer
 Section: libs
@@ -13,3 +12,11 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: DVBViewer PVR for XBMC
  DVBViewer PVR for XBMC
+
+Package: xbmc-pvr-dvbviewer-dbg
+Section: debug
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: debug symbols for DVBViewer PVR for XBMC
+ debug symbols for DVBViewer PVR for XBMC
+
