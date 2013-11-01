@@ -1,25 +1,24 @@
-PROJECT(pvr.dvbviewer)
+project(pvr.dvbviewer)
 
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+cmake_minimum_required(VERSION 2.6)
 
-ENABLE_LANGUAGE(CXX)
+enable_language(CXX)
 
-FIND_PACKAGE(xbmc REQUIRED)
-FIND_PACKAGE(xbmcplatform REQUIRED)
+find_package(xbmc REQUIRED)
+find_package(xbmcplatform REQUIRED)
 
-addon_version(pvr.dvbviewer DVBVIEWER)
-
-INCLUDE_DIRECTORIES(${xbmcplatform_INCLUDE_DIRS}
+include_directories(${xbmcplatform_INCLUDE_DIRS}
                     ${XBMC_INCLUDE_DIR})
 
-ADD_DEFINITIONS(-D__STDC_FORMAT_MACROS)
+add_definitions(-D__STDC_FORMAT_MACROS)
 
-SET(SOURCES src/client.cpp
-            src/DvbData.cpp
-            src/TimeshiftBuffer.cpp
-            src/xmlParser.cpp)
+set(DVBVIEWER_SOURCES src/client.cpp
+                      src/DvbData.cpp
+                      src/TimeshiftBuffer.cpp
+                      src/xmlParser.cpp)
 
-SET(DEPLIBS ${xbmcplatform_LIBRARIES})
+set(DEPLIBS ${xbmcplatform_LIBRARIES})
 
-build_addon(pvr.dvbviewer SOURCES DEPLIBS DVBVIEWER_VERSION)
-install_addon(pvr.dvbviewer ${DVBVIEWER_VERSION})
+build_addon(pvr.dvbviewer DVBVIEWER DEPLIBS)
+
+include(CPack)
