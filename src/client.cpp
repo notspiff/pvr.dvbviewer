@@ -21,8 +21,8 @@
 
 #include "client.h"
 #include "DvbData.h"
-#include "xbmc/xbmc_pvr_dll.h"
-#include "xbmc/util/util.h"
+#include "kodi/xbmc_pvr_dll.h"
+#include "kodi/util/util.h"
 #include <stdlib.h>
 
 using namespace ADDON;

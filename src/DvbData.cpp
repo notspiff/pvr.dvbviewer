@@ -1,8 +1,8 @@
 #include "DvbData.h"
 #include "client.h"
-#include "xbmc/util/util.h"
+#include "kodi/util/util.h"
 #include <tinyxml.h>
-#include "xbmc/util/XMLUtils.h"
+#include "kodi/util/XMLUtils.h"
 #include <inttypes.h>
 #include <set>
 #include <iterator>

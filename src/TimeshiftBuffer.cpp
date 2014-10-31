@@ -1,6 +1,6 @@
 #include "TimeshiftBuffer.h"
 #include "client.h"
-#include "xbmc/util/util.h"
+#include "kodi/util/util.h"
 
 using namespace ADDON;
 

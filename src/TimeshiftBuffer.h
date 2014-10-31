@@ -3,8 +3,8 @@
 #ifndef PVR_DVBVIEWER_TIMESHIFTBUFFER_H
 #define PVR_DVBVIEWER_TIMESHIFTBUFFER_H
 
-#include "xbmc/util/StdString.h"
-#include "xbmc/threads/threads.h"
+#include "kodi/util/StdString.h"
+#include "kodi/threads/threads.h"
 
 #define STREAM_READ_BUFFER_SIZE   8192
 #define BUFFER_READ_TIMEOUT       10000

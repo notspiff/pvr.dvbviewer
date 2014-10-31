@@ -5,8 +5,8 @@
 
 #include "client.h"
 #include "TimeshiftBuffer.h"
-#include "xbmc/util/StdString.h"
-#include "xbmc/threads/threads.h"
+#include "kodi/util/StdString.h"
+#include "kodi/threads/threads.h"
 #include <list>
 
 #define CHANNELDAT_HEADER_SIZE       (7)
