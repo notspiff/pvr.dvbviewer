@@ -10,7 +10,7 @@ find_package(TinyXML REQUIRED)
 find_package(kodi REQUIRED)
 find_package(kodiplatform REQUIRED)
 
-include_directories(${KODIPLATFORM_INCLUDE_DIRS}
+include_directories(${kodiplatform_INCLUDE_DIRS}
                     ${KODI_INCLUDE_DIR}
                     ${TINYXML_INCLUDE_DIRS})
 
@@ -20,7 +20,7 @@ set(DVBVIEWER_SOURCES src/client.cpp
                       src/DvbData.cpp
                       src/TimeshiftBuffer.cpp)
 
-set(DEPLIBS ${KODIPLATFORM_LIBRARIES} ${TINYXML_LIBRARIES})
+set(DEPLIBS ${kodiplatform_LIBRARIES} ${TINYXML_LIBRARIES})
 
 build_addon(pvr.dvbviewer DVBVIEWER DEPLIBS)
 
