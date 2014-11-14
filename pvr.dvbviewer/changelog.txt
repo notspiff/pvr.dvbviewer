@@ -1,3 +1,61 @@
+1.9.21
+[fixed] deadlock when activating the addon on some darwin (osx, ios) runtimes
+
+1.9.20
+
+[updated] Language files from Transifex
+
+1.9.19
+
+[updated] Language files from Transifex
+
+1.9.18
+
+[updated] to API v1.9.2
+
+1.9.16
+
+[updated] Language files from Transifex
+
+1.9.15
+
+[updated] Speed up timeshift startup time
+[added] If available add genre to EPG
+[added] Support for grouping recordings. Grouping can be by rec. directory,
+        rec. date, first letter, tv channel or series
+[fixed] Another timezone offsets fix
+
+1.9.14
+
+[updated] Require DVB Viewer Recording Service 1.26.0 or later
+[updated] Removed external XML library. Use TinyXML instead
+[added] Low performance mode for devices like the raspberry pi
+[fixed] Timers starting near 12pm could have wrong date
+
+1.9.13
+
+[updated] Language files from Transifex
+
+1.9.12
+
+[updated] Language files from Transifex
+
+1.9.11
+[added] add timeshift buffer functions
+
+1.8.10
+
+[updated] Require DVB Viewer Recording Service 1.25.0 or later
+[updated] In general use RS XML API instead of HTML/channeldat parsing
+[updated] Rewrote channel parsing. Use favourites if you want fast startups.
+[updated] Rewrote recording parsing, generate unique recording IDs
+[added] Show available diskspace
+[added] RTSP support (Note: RTSP is only available if timeshift is disabled)
+[fixed] Removed signal status information. Not available anymore
+[fixed] Channel logos not being displayed for some channels
+[fixed] After changing certain settings live TV wasn't work anymore and XBMC restart was required
+[fixed] possible crash (2x)
+
 1.8.9
 
 [updated] sync with PVR API v1.8.0
