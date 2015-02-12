@@ -11,8 +11,8 @@
   <extension
     point="xbmc.pvrclient"
     library_linux="pvr.dvbviewer.so"
-    library_osx="pvr.dvbviewer.so"
-    library_wingl="pvr.dvbviewer.dll"
+    library_osx="pvr.dvbviewer.dylib"
+    library_freebsd="pvr.dvbviewer.so"
     library_windx="pvr.dvbviewer.dll"
     library_android="libpvr.dvbviewer.so"/>
   <extension point="xbmc.addon.metadata">
