@@ -18,6 +18,7 @@ add_definitions(-D__STDC_FORMAT_MACROS)
 
 set(DVBVIEWER_SOURCES src/client.cpp
                       src/DvbData.cpp
+                      src/RecordingReader.cpp
                       src/TimeshiftBuffer.cpp)
 
 set(DEPLIBS ${kodiplatform_LIBRARIES} ${TINYXML_LIBRARIES})
